@@ -1,7 +1,8 @@
 import React from "react";
 import "../stylesheets/App.css";
-
 import List from "./List";
+import Sumary from "./Sumary";
+import Discounts from "./Discounts";
 
 class App extends React.Component {
   constructor(props) {
@@ -12,7 +13,8 @@ class App extends React.Component {
       countCap: 0,
       priceShirt: 20,
       priceMug: 5,
-      priceCap: 10
+      priceCap: 10,
+      discountShirt: 0
     };
   }
 
@@ -85,40 +87,26 @@ class App extends React.Component {
 
         <aside className="summary">
           <h1 className="main">Order Summary</h1>
-          <ul className="summary-items wrapper border">
-            <li>
-              <span className="summary-items-number">11 Items</span>
-              <span className="summary-items-price">
-                120<span className="currency">€</span>
-              </span>
-            </li>
-          </ul>
-          <div className="summary-discounts wrapper-half border">
-            <h2>Discounts</h2>
-            <ul>
-              <li>
-                <span>2x1 Mug offer</span>
-                <span>-10€</span>
-              </li>
-              <li>
-                <span>x3 Shirt offer</span>
-                <span>-3€</span>
-              </li>
-              <li>
-                <span>Promo code</span>
-                <span>0€</span>
-              </li>
-            </ul>
-          </div>
-          <div className="summary-total wrapper">
-            <ul>
-              <li>
-                <span className="summary-total-cost">Total cost</span>
-                <span className="summary-total-price">107€</span>
-              </li>
-            </ul>
-            <button type="submit">Checkout</button>
-          </div>
+          {/* sumary */}
+          <Sumary
+            countShirt={this.state.countShirt}
+            countMug={this.state.countMug}
+            countCap={this.state.countCap}
+            priceShirt={this.state.priceShirt}
+            priceMug={this.state.priceMug}
+            priceCap={this.state.priceCap}
+          />
+          {/* sumary */}
+          {/* discounts */}
+          <Discounts
+            countShirt={this.state.countShirt}
+            priceShirt={this.state.priceShirt}
+            countMug={this.state.countMug}
+            priceMug={this.state.priceMug}
+            countCap={this.state.countCap}
+            priceCap={this.state.priceCap}
+          />
+          {/* discounts */}
         </aside>
       </main>
     );
