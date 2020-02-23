@@ -11,6 +11,7 @@ function List(props) {
         countShirt={props.countShirt}
         incrementShirt={props.incrementShirt}
         decrementShirt={props.decrementShirt}
+        priceShirt={props.priceShirt}
       />
       {/* camiseta */}
       {/* taza */}
@@ -18,6 +19,7 @@ function List(props) {
         countMug={props.countMug}
         incrementMug={props.incrementMug}
         decrementMug={props.decrementMug}
+        priceMug={props.priceMug}
       />
       {/* taza */}
       {/* gorra */}
@@ -25,6 +27,7 @@ function List(props) {
         countCap={props.countCap}
         incrementCap={props.incrementCap}
         decrementCap={props.decrementCap}
+        priceCap={props.priceCap}
       />
       {/* gorra */}
     </ul>

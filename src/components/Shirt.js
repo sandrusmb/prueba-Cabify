@@ -27,11 +27,13 @@ function Shirt(props) {
         </button>
       </div>
       <div className="col-price">
-        <span className="product-price">20</span>
+        <span className="product-price">{props.priceShirt}</span>
         <span className="product-currency currency">€</span>
       </div>
       <div className="col-total">
-        <span className="product-price">60</span>
+        <span className="product-price">
+          {props.countShirt * props.priceShirt}
+        </span>
         <span className="product-currency currency">€</span>
       </div>
     </li>

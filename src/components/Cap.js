@@ -27,11 +27,11 @@ function Cap(props) {
         </button>
       </div>
       <div className="col-price">
-        <span className="product-price">10</span>
+        <span className="product-price">{props.priceCap}</span>
         <span className="product-currency currency">€</span>
       </div>
       <div className="col-total">
-        <span className="product-price">40</span>
+        <span className="product-price">{props.countCap * props.priceCap}</span>
         <span className="product-currency currency">€</span>
       </div>
     </li>

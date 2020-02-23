@@ -9,7 +9,10 @@ class App extends React.Component {
     this.state = {
       countShirt: 0,
       countMug: 0,
-      countCap: 0
+      countCap: 0,
+      priceShirt: 20,
+      priceMug: 5,
+      priceCap: 10
     };
   }
 
@@ -21,7 +24,7 @@ class App extends React.Component {
 
   decrementShirt = () => {
     this.setState({
-      countShirt: this.state.countShirt - 1
+      countShirt: this.state.countShirt > 0 ? this.state.countShirt - 1 : 0
     });
   };
 
@@ -33,7 +36,7 @@ class App extends React.Component {
 
   decrementMug = () => {
     this.setState({
-      countmug: this.state.countMug - 1
+      countMug: this.state.countMug > 0 ? this.state.countMug - 1 : 0
     });
   };
 
@@ -45,7 +48,7 @@ class App extends React.Component {
 
   decrementCap = () => {
     this.setState({
-      countCap: this.state.countCap - 1
+      countCap: this.state.countCap > 0 ? this.state.countCap - 1 : 0
     });
   };
 
@@ -73,9 +76,13 @@ class App extends React.Component {
             countCap={this.state.countCap}
             incrementCap={this.incrementCap}
             decrementCap={this.decrementCap}
+            priceShirt={this.state.priceShirt}
+            priceMug={this.state.priceMug}
+            priceCap={this.state.priceCap}
           />
           {/* list */}
         </section>
+
         <aside className="summary">
           <h1 className="main">Order Summary</h1>
           <ul className="summary-items wrapper border">

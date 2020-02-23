@@ -27,11 +27,11 @@ function Mug(props) {
         </button>
       </div>
       <div className="col-price">
-        <span className="product-price">5</span>
+        <span className="product-price">{props.priceMug}</span>
         <span className="product-currency currency">€</span>
       </div>
       <div className="col-total">
-        <span className="product-price">20</span>
+        <span className="product-price">{props.countMug * props.priceMug}</span>
         <span className="product-currency currency">€</span>
       </div>
     </li>
