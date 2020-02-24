@@ -3,6 +3,7 @@ import "../stylesheets/App.css";
 import List from "./List";
 import Sumary from "./Sumary";
 import Discounts from "./Discounts";
+import Header from "./Header";
 
 class App extends React.Component {
   constructor(props) {
@@ -59,15 +60,7 @@ class App extends React.Component {
       <main className="App">
         <section className="products">
           <h1 className="main">Shopping cart</h1>
-          <ul className="products-list tableHead">
-            <li className="products-list-title row">
-              <div className="col-product">Product details</div>
-              <div className="col-quantity">Quantity</div>
-              <div className="col-price">Price</div>
-              <div className="col-total">Total</div>
-            </li>
-          </ul>
-          {/* list */}
+          <Header />
           <List
             countShirt={this.state.countShirt}
             incrementShirt={this.incrementShirt}
@@ -82,12 +75,11 @@ class App extends React.Component {
             priceMug={this.state.priceMug}
             priceCap={this.state.priceCap}
           />
-          {/* list */}
         </section>
 
         <aside className="summary">
           <h1 className="main">Order Summary</h1>
-          {/* sumary */}
+
           <Sumary
             countShirt={this.state.countShirt}
             countMug={this.state.countMug}
@@ -96,8 +88,7 @@ class App extends React.Component {
             priceMug={this.state.priceMug}
             priceCap={this.state.priceCap}
           />
-          {/* sumary */}
-          {/* discounts */}
+
           <Discounts
             countShirt={this.state.countShirt}
             priceShirt={this.state.priceShirt}
@@ -106,7 +97,6 @@ class App extends React.Component {
             countCap={this.state.countCap}
             priceCap={this.state.priceCap}
           />
-          {/* discounts */}
         </aside>
       </main>
     );
