@@ -344,6 +344,7 @@ input {
   display: flex;
   align-items: center;
   flex-flow: row nowrap;
+  border: 1px solid red;
 }
 
 .product-image img {

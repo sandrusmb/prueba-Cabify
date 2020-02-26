@@ -4,6 +4,7 @@ import List from "./List";
 import Sumary from "./Sumary";
 import Discounts from "./Discounts";
 import Header from "./Header";
+import Modal from "./Modal";
 
 class App extends React.Component {
   constructor(props) {
@@ -98,6 +99,7 @@ class App extends React.Component {
             priceCap={this.state.priceCap}
           />
         </aside>
+        <Modal />
       </main>
     );
   }
