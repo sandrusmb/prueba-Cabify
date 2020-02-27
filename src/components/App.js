@@ -56,6 +56,16 @@ class App extends React.Component {
     });
   };
 
+  detailShirt = () => {
+    const modal = document.getElementById("modal");
+    modal.classList.toggle("js-modal-bg");
+  };
+
+  closeModal = ev => {
+    const modal = document.getElementById("modal");
+    modal.classList.toggle("js-modal-bg");
+  };
+
   render() {
     return (
       <main className="App">
@@ -75,6 +85,7 @@ class App extends React.Component {
             priceShirt={this.state.priceShirt}
             priceMug={this.state.priceMug}
             priceCap={this.state.priceCap}
+            detailShirt={this.detailShirt}
           />
         </section>
 
@@ -99,7 +110,7 @@ class App extends React.Component {
             priceCap={this.state.priceCap}
           />
         </aside>
-        <Modal />
+        <Modal closeModal={this.closeModal} />
       </main>
     );
   }

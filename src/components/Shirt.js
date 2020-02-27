@@ -6,7 +6,11 @@ function Shirt(props) {
     <li className="product row">
       <div className="col-product">
         {/* click */}
-        <figure className="product-image">
+        <figure
+          id="figure"
+          className="product-image"
+          onClick={props.detailShirt}
+        >
           <img src={shirt} alt="Shirt" />
           <div className="product-description">
             <h1>Shirt</h1>

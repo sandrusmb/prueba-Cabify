@@ -12,6 +12,7 @@ function List(props) {
         incrementShirt={props.incrementShirt}
         decrementShirt={props.decrementShirt}
         priceShirt={props.priceShirt}
+        detailShirt={props.detailShirt}
       />
       {/* camiseta */}
       {/* taza */}
