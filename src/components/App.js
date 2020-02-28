@@ -61,7 +61,7 @@ class App extends React.Component {
     modal.classList.toggle("js-modal-bg");
   };
 
-  closeModal = ev => {
+  closeModal = () => {
     const modal = document.getElementById("modal");
     modal.classList.toggle("js-modal-bg");
   };

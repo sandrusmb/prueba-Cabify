@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylesheets/modal.scss";
+import "../stylesheets/modal.css";
 import modalImg from "../img/tshirt.jpg";
 
 function Modal(props) {

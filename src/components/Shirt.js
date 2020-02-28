@@ -5,7 +5,6 @@ function Shirt(props) {
   return (
     <li className="product row">
       <div className="col-product">
-        {/* click */}
         <figure
           id="figure"
           className="product-image"
@@ -17,7 +16,6 @@ function Shirt(props) {
             <p className="product-code">Product code X7R2OPX</p>
           </div>
         </figure>
-        {/* click */}
       </div>
       <div className="col-quantity">
         <button className="count" onClick={props.decrementShirt}>

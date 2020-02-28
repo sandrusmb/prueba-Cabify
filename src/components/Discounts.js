@@ -23,17 +23,10 @@ function Discounts(props) {
         <ul>
           <li>
             <span>2x1 Mug offer</span>
-            {/* <span>
-            {props.countMug % 2 === 0
-              ? (props.countMug / 2) * props.priceMug * -1
-              : ((props.countMug - 1) * props.priceMug * -1) / 2}
-            €
-          </span> */}
             <span>{mugDiscount}€</span>
           </li>
           <li>
             <span>x3 Shirt offer</span>
-            {/* <span>{props.countShirt >= 3 ? props.countShirt * -1 : 0}€</span> */}
             <span>{shirtDiscount}</span>
           </li>
           <li>
