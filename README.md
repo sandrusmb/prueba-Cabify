@@ -1,3 +1,31 @@
+## Instalar dependencias
+
+Este proyecto está desarrollado con React usando npm para gestionar las dependencias. Para instalarlas, simplemente ejecuta
+
+```
+npm install
+```
+
+## Arrancar el proyecto
+
+Una vez instaladas las dependencias, puedes arrancar el proyecto ejecutando
+
+```
+npm start
+```
+
+## Proyecto en producción
+
+Para ejecutar el código en modo producción hay que construirlo, para ello hay que ejecutar
+
+```
+npm build
+```
+
+Una vez construido, la web estará disponible en `/build/public/`. Después simplemente debemos abrir el archivo index.html en el navegador.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
