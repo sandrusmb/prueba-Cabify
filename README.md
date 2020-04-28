@@ -21,29 +21,53 @@ Para ejecutar el código en modo producción he creado la carpeta build ejecutan
 ## Estructura
 
 shopping-cart
+
 ├── build
+
 │ └── ...
+
 ├── public
+
 │ ├── favicon.ico
+
 │ ├── index.html
+
 │ └── manifest.json
+
 ├── src
+
 │ ├── components
+
 │ │ ├── App.js
+
 │ │ │ └── Header.js
+
 │ │ │ └── List.js
+
 │ │ │ │ └── Shirt.js
+
 │ │ │ │ └── Mug.js
+
 │ │ │ │ └── Cap.js
+
 │ │ │ └── Sumary.js
+
 │ │ │ └── Discounts.js
+
 │ │ │ └── Modal.js
+
 │ ├── img
+
 │ │ │ └── ...
+
 │ ├── stylesheets
+
 │ │ │ └── App.css
+
 │ │ │ └── index.css
+
 │ │ │ └── modal.scss
+
 | └── index.js
 
 ## Decisiones
